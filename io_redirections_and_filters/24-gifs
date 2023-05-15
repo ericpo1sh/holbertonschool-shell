@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laR | find . -type f '*.gif' | du -b . | 
+ls -laR | find . -type f '*.gif' | wc -c | rev | cut -d '/' -f 1 | rev | cut -d '.' -f 1 | rev
