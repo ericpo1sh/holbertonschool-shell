@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -fields=FIELD-LIST /etc/passwd | sort
+cut -fields=1 /etc/passwd | sort
