@@ -1,0 +1,5 @@
+#!/bin/bash
+git add .
+echo 'Enter Commit Title'
+git commit -m '$commit_title'
+git push
