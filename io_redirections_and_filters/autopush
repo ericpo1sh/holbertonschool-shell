@@ -2,5 +2,5 @@
 git add .
 echo 'Enter Commit Title'
 read commit_title
-git commit -m '$commit_title'
+git commit -m '$'
 git push
