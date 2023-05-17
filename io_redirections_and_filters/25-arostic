@@ -1,2 +1,0 @@
-#!/bin/bash
-head -n 9 | cut N-1 
