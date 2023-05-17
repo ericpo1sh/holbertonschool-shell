@@ -1,2 +1,2 @@
 #!/bin/bash
-id= cut -c-1 $line | paste -sd
+id= cut -c-1 $line | paste -sd ' '
