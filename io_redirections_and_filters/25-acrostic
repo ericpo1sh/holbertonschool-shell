@@ -1,2 +1,2 @@
 #!/bin/bash
-cut N-1
+id= cut -c-1 $line
