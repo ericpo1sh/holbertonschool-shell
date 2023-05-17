@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /actions | echo "$PATH"
+mkdir /actions | echo "$PATH"
