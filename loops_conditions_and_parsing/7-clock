@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#count minutes up to 59, once it hits 60, display hour followed by minute, so on and so fourth. once hour hits 12, stop the loop
+minute=0
+hour=1
+
+while [ $minute -le 59 ]
+do
+	((minute++))
+if [ $minute = 60 ]
+then 
+	echo Hour: $hour && minute=0
+	((hour++))
+else 
+	echo "$minute"
+fi
+if [ $hour = 13 ] 
+then	
+	break
+fi
+done
