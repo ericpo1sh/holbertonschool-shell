@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#while x is less than/equal 9, print best school, once x is equal to 9, print Hi followed by best school on a new line
 x=0
 while [ $x -le 9 ]
 do
