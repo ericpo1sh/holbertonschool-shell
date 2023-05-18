@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#while the variable is less than/equal to 10, print text and add to variable until it is equal to 10
 f=1
 while [ $f -le 10 ] 
 do
