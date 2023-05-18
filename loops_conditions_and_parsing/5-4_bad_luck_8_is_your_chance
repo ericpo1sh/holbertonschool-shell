@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# while variable is less/equal 9 keeping adding to variable and echo best school, if variable equals 4 then print text, keep echo until equals 8 and echo text.
+x=0
+while [ $x -le 9 ]
+do
+	((x++))
+if [ $x = 4 ]
+then 
+	echo 'bad luck'
+elif	[ $x = 8 ]
+then
+	echo 'good luck'
+
+else 
+	echo 'Best School'
+fi
+done
