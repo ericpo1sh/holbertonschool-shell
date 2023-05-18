@@ -13,8 +13,9 @@ then
 else 
 	echo "$minute"
 fi
-if [ $hour = 14 ] 
+if [ $hour = 13 ] 
 then	
 	break
 fi
 done
+printf '%s\n' {1..59}

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#
+minute=0
+hour=0
+while [ $minute -le 59 ]
+do 
+	echo Hour: $hour && minute=0
+	((minute++))
+if [ $minute = 60 ] 
+then 
+	((hour++))
+
+fi
+done
+
+
+
+
