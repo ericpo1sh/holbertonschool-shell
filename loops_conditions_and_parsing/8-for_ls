@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # making x the veriable that holds the command *\ * which will create a list.
-for x in (ls -l)  
+for x in $(ls)	
 do
 	echo $x
 done
