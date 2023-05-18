@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+f=1
+while [ $f -le 10 ] 
+do
+	echo 'Best School'
+	((f++))
+done
