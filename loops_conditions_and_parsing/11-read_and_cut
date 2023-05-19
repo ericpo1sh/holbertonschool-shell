@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-#FILENAME="/etc/passwd"
-while IFS=: read -r username password userid groupid comment homedir cmdshell
-do
-  echo "$username, $userid, $comment $homedir"
-done < $FILENAME
+FILENAME="/etc/passwd"
+while IFS= read -r line; do
+	echo $line
+done < "$file"
