@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#For each number, it checks if it is divisible by 3, 5, or both. If it is divisible by 3, it prints "Fizz". If it is divisible by 5, it prints "Buzz". If it is divisible by both 3 and 5, it prints "FizzBuzz". If it is not divisible by either 3 or 5, it prints the number itself.
+for i in {1..100}
+do
+three=$((i%3))
+five=$((i%5))
+if [ $three = 0 ] && [ $five = 0 ]
+then
+	echo "FizzBuzz"
+	else
+	if  [ $three = 0 ]
+	then
+		echo "Fizz"
+	elif [ $five = 0 ] 
+	then
+		echo "Buzz"
+	else
+	       	echo $i
+	fi
+fi
+done
+
