@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# making x the veriable that holds the command *\ * which will create a list.
+#for variable holds the command ls, now we echo the variable (command) then we cut off the - in feild 2
 directorylist=$(ls)
 for i in $directorylist
 do
