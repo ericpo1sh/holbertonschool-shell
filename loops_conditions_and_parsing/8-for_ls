@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # making x the veriable that holds the command *\ * which will create a list.
-for x in $(ls -1 | rev | cut -d '-' -f 1 | rev)	
+for x in $(ls | rev | cut -d '-' -f 1 | rev)	
 do
 	echo "$x"
 done
