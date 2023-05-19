@@ -2,5 +2,6 @@
 #
 FILENAME="/etc/passwd"
 while IFS= read -r line; do
-	echo $line
-done < "$file"
+	echo "$line"
+	printf "%.0s" $FILENAME
+done
