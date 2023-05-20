@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
 #using kill command to stop 4-to_infinity_and_beyond
-kill 30775
+process_name="4-to_infinity_and_beyond"
+pid=$(pgrep "$process_name")
+
+if [ -n "$pid" ]; then
+	  echo "Stopping $process_name (PID: $pid)..."
+	    kill "$pid"
+    else
+	      echo "Process $process_name is not currently running."
+fi
