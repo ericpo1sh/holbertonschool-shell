@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #using kill command to stop 4-to_infinity_and_beyond
-kill 137
+kill 30775
