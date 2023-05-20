@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 #hello
-FILENAME="etc/passwd"
-USERNAME=
+USERNAME=$(cut -d ':' -f 1)
+GROUP_ID=$(cut -d ':' -f 4)
+HOME_D=$(cut -d ':' -f 6)
+CMDSHELL=$(cut -d ':' -f 7)
+USER_ID=$(cut -d ':' -f 3)
+PASSWORD=$(cut -d ':' -f 2)
+USER_ID_INFO=$(cut -d ':' -f 5)
+echo $USERNAME
