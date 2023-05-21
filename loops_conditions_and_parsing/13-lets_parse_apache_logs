@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#using awk to scan and print lines 1, which contains the IP ADDRESS then adding the HTML status code from the apache log.
+file=apache-access.log
+awk '{ print $1, $9 }' $file
