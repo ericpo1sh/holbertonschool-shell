@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#using awk to scan apache log and finding the occurence, ip adress, and the http code and printing it all out
+file=apache-access.log
+awk '{ print $10, $1, $9 }' $file
