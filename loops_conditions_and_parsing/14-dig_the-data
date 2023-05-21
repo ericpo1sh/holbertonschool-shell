@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#writing a script that displays OCCURENCE_NUMBER IP HTTP_CODE in order from the apache log
+file=apache-access.log
+awk '{ print $10, $1, $9 }' $file
