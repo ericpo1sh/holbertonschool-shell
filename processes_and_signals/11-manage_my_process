@@ -1,23 +1,33 @@
 #!/usr/bin/env bash
 #
-hi="$1"
-case $hi in
+file: manage_my_process
+eric=$1
+start() {
+	./manage_my_process &
+	echo "$!" > "/var/run/my_process.pid"
+}
+
+stop() {
+	sudo pkill -f "./manage_my_process" &&
+	sudo rm "/var/run/my_process.pid"
+}
+
+restart() {
+	stop && start
+}
+
+case "$eric" in
 	start)
-		./manage_my_process &
-		echo "$!" > "/var/run/my_process.pid"
+		start
 		echo "manage_my_process started"
 		;;
 	stop)
-		sudo pkill -f "manage_my_process"
-		echo "manage_my_process restarted"
-		rm "/var/run/my_process.pid"
+		stop
+		echo "manage_my_process stopped"
 		;;
 	restart)
-		sudo pkill -f "manage_my_process"
+		restart
 		echo "manage_my_process restarted"
-                rm "/var/run/my_process.pid"
-		./manage_my_process &
-		echo "$!" > "/var/run/my_process.pid"
 		;;
 	*)
 		echo "Usage: manage_my_process {start|stop|restart}"
