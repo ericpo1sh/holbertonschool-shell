@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 #using kill command to stop 4-to_infinity_and_beyond
-infinity=4-to_infinity_and_beyond
-PID=$(pgrep $infinity)
-while ./$infinity;
-do
-	kill $PID
-done
+PID=$(pgrep -f 4-to_infinity_and_beyond)
+kill "$PID"
