@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #
-file: manage_my_process
 eric=$1
 start() {
 	./manage_my_process &
