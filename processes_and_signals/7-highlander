@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-#
-function invincible {
-    echo "I am invincible!!!"
-}
+#using trap to execute text when sigterm signal 15 is received
+trap "echo I am invincible!!!" 15
 while true; do
         echo To infinity and beyond
         sleep 2
