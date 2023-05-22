@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #ussing pkill -s to only match process session ID, then adding the signal 9 to kill the signal.
-pkill -s -9 -f 7-highlander
+pkill -s -9 -15 7-highlander
